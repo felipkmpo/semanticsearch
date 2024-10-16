@@ -2,8 +2,24 @@
 
 Paso a paso para la ejecucion de aplicativo de busqueda semantica en contenedor docker:
 
-- Primero debemos clonar el proyecto, lo clonaremos con la isntruccion "git clone https://github.com/felipkmpo/semanticsearch" la cual podras ejecutar desde algun terminal
-o terminal dentro de ambiente de desarrollo que desees
+- Primero debemos clonar el proyecto, lo clonaremos con la instruccion "git clone https://github.com/felipkmpo/semanticsearch" la cual podras ejecutar desde algun terminal
+o terminal dentro de ambiente de desarrollo que desees.
+
+
+
+
+
+instrucciones para correr Docker:
+
+docker build -t busquedasemantica .
+docker run -it busquedasemantica  (modo interactivo)
+coverage
+
+docker exec -it mi_contenedor coverage run -m unittest src/tests/test_search_engine.py
+docker exec -it mi_contenedor coverage report
+docker exec -it mi_contenedor  coverage html
+docker cp <container_id>:<source_path> <destination_path_on_local_machine>
+
 
 ## Objetivos - Entrega preliminar
 
