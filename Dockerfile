@@ -9,9 +9,8 @@ COPY requerimientos.txt .
 RUN pip install --no-cache-dir -r requerimientos.txt
 
 
-COPY . .
-
-VOLUME ./app/src
+COPY src ./src/
+COPY tests /app/tests
 
 
 CMD [ "python","src/semantic_search_students.py" ]

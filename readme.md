@@ -1,6 +1,9 @@
-# Buscador de películas semántico
+# PROYECTO 1 - ENTREGA FINAL
 
-Con este proyecto aprenderás las bases de git y docker. También tendrás un acercamiento al uso de vectores para NLP o procesamiento del lenguaje natural con hugging face, esta es la tecnología detrás de herramientas como chatgpt, Llama, o incluso google.
+Paso a paso para la ejecucion de aplicativo de busqueda semantica en contenedor docker:
+
+- Primero debemos clonar el proyecto, lo clonaremos con la isntruccion "git clone https://github.com/felipkmpo/semanticsearch" la cual podras ejecutar desde algun terminal
+o terminal dentro de ambiente de desarrollo que desees
 
 ## Objetivos - Entrega preliminar
 

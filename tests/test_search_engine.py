@@ -1,7 +1,7 @@
 import unittest
 import pandas as pd
 from unittest.mock import patch
-from nuevo3 import CosineSimilaritySearchEngine, ampliarcontexto, MotorBusqueda,generate_embeddings_with_context,interactive_search
+from src.semantic_search_students import CosineSimilaritySearchEngine, ampliarcontexto, MotorBusqueda,generate_embeddings_with_context,interactive_search
 from sentence_transformers import SentenceTransformer, util
 
 class TestAmpliarContexto(unittest.TestCase):
@@ -44,14 +44,14 @@ class TestMotorBusqueda(unittest.TestCase):
 class TestCosineSimilaritySearchEngine(unittest.TestCase):
     def test_init(self):
         model_name ='sentence-transformers/all-MiniLM-L6-v2'
-        dataset_path = 'IMDBtop1000.csv'
+        dataset_path = 'src/IMDBtop1000.csv'
         search_engine = CosineSimilaritySearchEngine(model_name, dataset_path)
         self.assertIsInstance(search_engine.model, SentenceTransformer)
         self.assertIsInstance(search_engine.dataset, pd.DataFrame)
 
     def test_compute_similarity(self):
         #Probaremos que la función compute_similarity devuelve una similitud de coseno entre dos embeddings.
-        search_engine = CosineSimilaritySearchEngine('sentence-transformers/all-MiniLM-L6-v2', 'IMDBtop1000.csv')
+        search_engine = CosineSimilaritySearchEngine('sentence-transformers/all-MiniLM-L6-v2', 'src/IMDBtop1000.csv')
         example_embedding = [1, 2, 3]
         query_embedding = [4, 5, 6]
         resultado = search_engine.compute_similarity(example_embedding, query_embedding)
@@ -59,7 +59,7 @@ class TestCosineSimilaritySearchEngine(unittest.TestCase):
 
     def test_search(self):
         #Probar que la función search devuelve un DataFrame con los resultados de la búsqueda.
-        search_engine = CosineSimilaritySearchEngine('sentence-transformers/all-MiniLM-L6-v2', 'IMDBtop1000.csv')
+        search_engine = CosineSimilaritySearchEngine('sentence-transformers/all-MiniLM-L6-v2', 'src/IMDBtop1000.csv')
         query_description = 'Consulta de prueba'
         resultado = search_engine.search(query_description)
         self.assertIsInstance(resultado, pd.DataFrame)
