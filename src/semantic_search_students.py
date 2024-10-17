@@ -32,7 +32,7 @@ def ampliarcontexto(row):
     """
     description = row['Description']
     cast = row.get('Cast', '')
-    info = row.get('Info', '')  
+    info = row.get('Info', '') 
 
     # Concatenamos la descripción con la información adicional
     context_description = f"{description}. Cast: {cast}. Info: {info}."

@@ -1,11 +1,12 @@
 # PROYECTO 1 - ENTREGA FINAL
 
-Paso a paso para la ejecucion de aplicativo de busqueda semantica en contenedor docker:
+## Paso a paso para la ejecucion de aplicativo busqueda semantica en contenedor docker
 
-- Primero debemos clonar el proyecto, lo clonaremos con la instruccion "git clone https://github.com/felipkmpo/semanticsearch" la cual podras ejecutar desde algun terminal
-o terminal dentro de ambiente de desarrollo que desees.
+requisitos: aplicativo docker desktop https://www.docker.com/products/docker-desktop/
 
+- Primero debemos clonar el proyecto a un ubicacion o carpeta local en tu equipo , lo clonaremos con la instruccion "git clone https://github.com/felipkmpo/semanticsearch" la cual podras ejecutar desde algun terminal independiente o algun terminal dentro de ambiente de desarrollo que desees. (validemos que se hayan clonado todos los archivos, carpetas)
 
+- continuamos c
 
 
 

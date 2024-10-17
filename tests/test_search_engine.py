@@ -30,8 +30,8 @@ class TestMotorBusqueda(unittest.TestCase):
     def test_compute_similarity(self):
         #Probaremos que la función compute_similarity lanza una excepción NotImplementedError.
         motor_busqueda = MotorBusqueda('sentence-transformers/all-MiniLM-L6-v2')
-        example_embedding = [1, 2, 3]
-        query_embedding = [4, 5, 6]
+        example_embedding = [1.0, 2.0, 3.0]
+        query_embedding = [4.0, 5.0, 6.0]
         with self.assertRaises(NotImplementedError):
             motor_busqueda.compute_similarity(example_embedding, query_embedding)
 
@@ -39,7 +39,7 @@ class TestMotorBusqueda(unittest.TestCase):
         #Probar que la función search lanza una excepción NotImplementedError.
         motor_busqueda = MotorBusqueda('sentence-transformers/all-MiniLM-L6-v2')
         with self.assertRaises(NotImplementedError):
-            motor_busqueda.search('Consulta de prueba')
+            motor_busqueda.search('Consulta de prueba','consulta prueba 2')
 
 class TestCosineSimilaritySearchEngine(unittest.TestCase):
     def test_init(self):
@@ -52,8 +52,8 @@ class TestCosineSimilaritySearchEngine(unittest.TestCase):
     def test_compute_similarity(self):
         #Probaremos que la función compute_similarity devuelve una similitud de coseno entre dos embeddings.
         search_engine = CosineSimilaritySearchEngine('sentence-transformers/all-MiniLM-L6-v2', 'src/IMDBtop1000.csv')
-        example_embedding = [1, 2, 3]
-        query_embedding = [4, 5, 6]
+        example_embedding = [1.0, 2.0, 3.0]
+        query_embedding = [4.0, 5.0, 6.0]
         resultado = search_engine.compute_similarity(example_embedding, query_embedding)
         self.assertIsInstance(resultado, float)
 
@@ -64,6 +64,8 @@ class TestCosineSimilaritySearchEngine(unittest.TestCase):
         resultado = search_engine.search(query_description)
         self.assertIsInstance(resultado, pd.DataFrame)
 
+#se comenta esta prueba porque es robusta, ya que valida con la cantidad de registros de conjunto de datos y 
+# por tal motivo se extiende la ejecucion de las pruebas
 """class TestInteractiveSearch(unittest.TestCase):
 
 
