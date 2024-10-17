@@ -81,7 +81,7 @@
 
         ![image](https://github.com/user-attachments/assets/acf91519-b920-4c96-9aeb-06a85e719cc8)
 
-        Aqui podremos identificar todos los archivos sobre los que se ejecutaron las pruebas coverage, el archivo relevante para nosotros es "test_search_engine"
+        Aqui podremos identificar todos los archivos sobre los que se ejecutaron las pruebas coverage, el archivo relevante para nosotros es "test_search_engine.py"
 
         ![image](https://github.com/user-attachments/assets/f9f03537-be2f-4916-8ee9-9596f7b11725)
 
