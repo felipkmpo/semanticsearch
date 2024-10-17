@@ -85,18 +85,3 @@
 
         ![image](https://github.com/user-attachments/assets/f9f03537-be2f-4916-8ee9-9596f7b11725)
 
-
-
-
-
-
-instrucciones para correr Docker:
-
-docker build -t busquedasemantica .
-docker run -it busquedasemantica  (modo interactivo)
-coverage
-
-docker exec -it mi_contenedor coverage run -m unittest src/tests/test_search_engine.py
-docker exec -it mi_contenedor coverage report
-docker exec -it mi_contenedor  coverage html
-docker cp <container_id>:<source_path> <destination_path_on_local_machine>
