@@ -84,6 +84,5 @@
 
        ![image](https://github.com/user-attachments/assets/3d8f2271-3c65-4b0e-a200-176d809936ee)
 
-     ***observación:*** fue cargada la carpeta "htmlcov" en la carpeta test, para validar directamente los resultados del test de cobertura
 
 
