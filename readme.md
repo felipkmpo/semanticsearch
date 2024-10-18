@@ -82,5 +82,8 @@
 
         Aqui podremos identificar todos los archivos sobre los que se ejecutaron las pruebas coverage, el archivo relevante para nosotros es "test_search_engine.py"
 
-        ![image](https://github.com/user-attachments/assets/f9f03537-be2f-4916-8ee9-9596f7b11725)
+       ![image](https://github.com/user-attachments/assets/3d8f2271-3c65-4b0e-a200-176d809936ee)
+
+     ***observación:*** fue cargada la carpeta "htmlcov" en la carpeta test, para validar directamente los resultados del test de cobertura
+
 
