@@ -27,10 +27,14 @@
         ***observacion:*** Dentro del archivo dockerfile, se encuentra el comando "CMD [ "python","src/semantic_search_students.py" ]", el "archivo semantic_search_students.py" es donde esta almacenado
         el código nuestro aplicativo principal, el cual queremos que se ejecute desde el inicio, con la palabra "python" le estamos diciendo a docker que lo ejecute con el compilador de python, de esta manera 
         cuando se corra el contenedor ejecutará este archivo.
-    - Cuando termine de ejecutar el comando anterior, abrimos el aplicativo docker y validamos que la imagen  se haya creado correctamente, si no se encuentra, valida el directorio de archivos,el archivo 
-    dockerfile este debe esta en la raiz de nuestro directorio.
+      
+    - Cuando termine de ejecutar el comando anterior, abrimos el aplicativo docker y validamos que la imagen  se haya creado correctamente, si no se encuentra, valida el directorio de archivos, el archivo 
+    dockerfile debe estar en la raiz de nuestro directorio.
+
       ![image](https://github.com/user-attachments/assets/ae2aaf60-44b3-4ac1-8b3f-494bd6080315)
+      
         ***observación:*** este proyecto utilizará las librerias de sentence-transformers la cual son pesadas, nuestra imagen quedara de 10gb aproximadamente.
+      
     - Con la imagen creada podremos continuar con la ejecución de nuestro proyecto, para esto ejecutaremos el comando "docker run -it busquedasemantica" en nuestra terminal, con esto se creará y ejecutará el 
      contenedor en modo interactivo, el cual automáticamente ejecutará nuestro aplicativo es decir ejecutará el archivo .py que configuramos para el arranque en el dockerfile; para validar la puesta en marcha 
      del contenedor dentro del aplciativo docker desktop, vamos a la pestaña "containers" y ahi visualizaremos el nuevo contenedor, los nombres de estos son aleatorios, a comparación del nombre de la imagen 
