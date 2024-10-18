@@ -39,7 +39,7 @@ def ampliarcontexto(row):
     return context_description
 
 # Ampliamos las descripciones antes de crear los embeddings
-def generate_embeddings_with_context(dataset, model):
+def generar_embeddings_con_contexto(dataset, model):
     """
     Función que genera embeddings utilizando descripciones enriquecidas con contexto adicional.
     """
@@ -74,7 +74,7 @@ class CosineSimilaritySearchEngine(MotorBusqueda):
         self.dataset = pd.read_csv(dataset_path)
 
         # Ampliamos las descripciones con contexto antes de generar los embeddings
-        self.dataset = generate_embeddings_with_context(self.dataset, self.model)
+        self.dataset = generar_embeddings_con_contexto(self.dataset, self.model)
 
     def compute_similarity(self, example_embedding, query_embedding):
         # Calculamos la similitud de coseno

@@ -1,7 +1,7 @@
 import unittest
 import pandas as pd
 from unittest.mock import patch
-from src.semantic_search_students import CosineSimilaritySearchEngine, ampliarcontexto, MotorBusqueda,generate_embeddings_with_context,interactive_search
+from src.semantic_search_students import CosineSimilaritySearchEngine, ampliarcontexto, MotorBusqueda,generar_embeddings_con_contexto,interactive_search
 from sentence_transformers import SentenceTransformer, util
 
 class TestAmpliarContexto(unittest.TestCase):
@@ -17,7 +17,7 @@ class TestGenerateEmbeddingsWithContext(unittest.TestCase):
     def test_generate_embeddings_with_context(self):
         dataset = pd.DataFrame({'Description': ['Descripción 1', 'Descripción 2'], 'Cast': ['Juan, Ana', 'Pedro, María'], 'Info': ['Película de acción', 'Película de comedia']})
         model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-        resultado = generate_embeddings_with_context(dataset, model)
+        resultado = generar_embeddings_con_contexto(dataset, model)
         self.assertIn('context_description', resultado.columns)
         self.assertIn('embeddings', resultado.columns)
 
