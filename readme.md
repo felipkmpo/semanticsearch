@@ -48,7 +48,7 @@
 
       ***observación:*** podremos seguir realizando busquedas hasta que digitemos la palabra salir.
  
-***Nota importante: Para ejecutar las pruebas coverage desde el contenedor dejaremos ejecutando el proyecto para poder continuar con la ejecución de pruebas, si finalizamos nuestra busqueda con la palabra "salir" el contenedor se detendra y no podremos seguuir utilizando la linea de comandos dentro del contenedor***
+***Nota importante: Para ejecutar las pruebas coverage desde el contenedor dejaremos ejecutando el proyecto para poder continuar con la ejecución de pruebas, si finalizamos nuestra busqueda con la palabra "salir" el contenedor se detendrá y no podremos seguir interactuando con el***
 
   ### Pruebas y cobertura aplicativo
 
