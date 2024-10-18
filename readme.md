@@ -31,14 +31,15 @@
     dockerfile este debe esta en la raiz de nuestro directorio.
       ![image](https://github.com/user-attachments/assets/ae2aaf60-44b3-4ac1-8b3f-494bd6080315)
         ***observación:*** este proyecto utilizará las librerias de sentence-transformers la cual son pesadas, nuestra imagen quedara de 10gb aproximadamente.
-    - Con la imagen creada podremos continuar con la ejecución de nuestro proyecto, para esto ejecutaremos el comando "docker run -it busquedasemantica" en nuestra terminal, con esto se creará el contenedor, 
-    el cual automáticamente ejecutará nuestro aplicativo, para validar la puesta en marcha del contenedor dentro del aplciativo dokcer desktop, vamos a la pestaña "containers" y ahi visualizaremos el nuevo 
-     contenedor, los nombre de estos son aleatorios, a comparacion del nombre de la imagen que si la parametrizamos.
+    - Con la imagen creada podremos continuar con la ejecución de nuestro proyecto, para esto ejecutaremos el comando "docker run -it busquedasemantica" en nuestra terminal, con esto se creará y ejecutará el 
+     contenedor en modo interactivo, el cual automáticamente ejecutará nuestro aplicativo es decir ejecutará el archivo .py que configuramos para el arranque en el dockerfile; para validar la puesta en marcha 
+     del contenedor dentro del aplciativo docker desktop, vamos a la pestaña "containers" y ahi visualizaremos el nuevo contenedor, los nombres de estos son aleatorios, a comparación del nombre de la imagen 
+     que si lo parametrizamos.
      ![image](https://github.com/user-attachments/assets/a998316a-bb5d-4448-8471-9818cd08138c)
 
      ![image](https://github.com/user-attachments/assets/1b04d739-d643-4066-99d4-54288761c489)
 
-      El aplicativo nos pedirá una descripcion corta sobre que tematica de pelicula nos gustaria ver, y posteriormente nos arrojará recomendaciones de peliculas relacionadas con dicha descripción.
+      El aplicativo nos pedirá una descripcion corta sobre que temática de pelicula nos gustaria ver, y posteriormente nos arrojará recomendaciones de peliculas relacionadas con dicha descripción.
       ![image](https://github.com/user-attachments/assets/df284cbe-102f-44c4-8dc2-d95a410e8b0a)
 
       ***observación:*** podremos seguir realizando busquedas hasta que digitemos la palabra salir.
