@@ -60,8 +60,8 @@
           de pruebas realizadas, para este ejercicio fueron 8.
           ![image](https://github.com/user-attachments/assets/8cfcc494-6d91-473e-be10-12bd21757937)
 
-        - Ahora utilizaremos el comando "docker exec -it mi_contenedor coverage report" (tener presente cambiar id contenedor), con el obejtivo de visualizar el procetanje de cobertura que tiene las pruebas
-          diseñadas, para este ejercicio se obtiene un 74% de cobertura.
+        - Ahora utilizaremos el comando "docker exec -it mi_contenedor coverage report" (tener presente cambiar id contenedor), con el objetivo de visualizar el procentaje de cobertura que tiene las pruebas
+          diseñadas, para este ejercicio se obtiene un 74% de cobertura sobre el archivo "semantic_search_students.py".
 
           ![image](https://github.com/user-attachments/assets/4f204491-e8f1-44d1-9904-a11cb824d5cd)
 
@@ -70,7 +70,7 @@
           
           ![image](https://github.com/user-attachments/assets/ba054312-fa92-46f3-9a78-3e74d9d9d0af)
 
-        - Para poder visualizar el detalle del test de cobertura necesitamos copiar la carpeta "htmlcov", abriremos el aplicativo docker desktop, vamos a la pestaña "containers", damos clic sobre el nombre             del contenedor en ejecución, damos clic a la pestañas files, dentro de app se encontrará la carpeta "htmlcov", damos clic derecho save o guardar, y la almacenados en alguna ubicacion local de nuestro          equipo.
+        - Para poder visualizar el detalle del test de cobertura necesitamos copiar o descargar la carpeta "htmlcov", abriremos el aplicativo docker desktop, vamos a la pestaña "containers", damos clic sobre           el nombre del contenedor en ejecución, damos clic a la pestañas files, dentro de app se encontrará la carpeta "htmlcov", damos clic derecho save o guardar, y la almacenados en alguna ubicacion local           de nuestro equipo.
           
         ![image](https://github.com/user-attachments/assets/97fcd073-e3a8-49a7-8dee-70a7b99a200a)
 
