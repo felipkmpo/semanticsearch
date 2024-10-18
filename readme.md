@@ -17,10 +17,10 @@
 - Luego de tener nuestro repositorio en local, ejecutamos el aplicativo Docker en nuestro equipo, con el fin de que los servicios esten corriendo y podamos gestionarlo desde consola con sus propios comandos.
   
     - Crearemos una imagen en docker, asi que desde la terminal ejecutamos el comando "docker build -t busquedasemantica .", (la palabra busquedasemantica será el nombre de nuestra imagen asi que se puede 
-      modificar) para la creacion de esta imagen es relevante tener configurado correctamente el archivo 
-      "dockerfile" ya que este es el que contiene todas las instrucciones para el correcto montaje de nuestra imagen y posterior ejecucion de los contenedores, aqui se incluirán instrucciones que instalarán 
-      librerias y contenido adicional que necesitamos para la correcta ejecucion de nuestro proyecto; tambien esta el archivo "requerimientos.txt" en el cual se encuentran los nombres de las librerias que     
-      necesitaremos, este archivo se utiliza para tener un orden con las librearias necesarias.
+      modificar) para la creación de esta imagen es relevante tener configurado correctamente el archivo 
+      "dockerfile" ya que este es el que contiene todas las instrucciones para el correcto montaje de nuestra imagen y posterior ejecución de los contenedores, aqui se incluirán instrucciones que instalarán 
+      librerias y contenido adicional que necesitamos para la correcta ejecución de nuestro proyecto; también esta el archivo "requerimientos.txt" en el cual se encuentran los nombres de las librerias que     
+      necesitaremos, este archivo se utiliza para administrar ordenadamente las librearias necesarias.
   
       ![image](https://github.com/user-attachments/assets/f290ba7f-6f74-4b4a-9f55-b14cc9cbf004)
       ![image](https://github.com/user-attachments/assets/857fbddf-9ebf-4409-943d-8296bf5e9cb8)
