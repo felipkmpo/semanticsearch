@@ -43,7 +43,7 @@
 
      ![image](https://github.com/user-attachments/assets/1b04d739-d643-4066-99d4-54288761c489)
 
-      El aplicativo nos pedirá una descripcion corta sobre que temática de pelicula nos gustaria ver, y posteriormente nos arrojará recomendaciones de peliculas relacionadas con dicha descripción.
+     El aplicativo nos pedirá una descripcion corta sobre que temática de pelicula nos gustaria ver, y posteriormente nos arrojará recomendaciones de peliculas relacionadas con dicha descripción.
       ![image](https://github.com/user-attachments/assets/df284cbe-102f-44c4-8dc2-d95a410e8b0a)
 
       ***observación:*** podremos seguir realizando busquedas hasta que digitemos la palabra salir.
