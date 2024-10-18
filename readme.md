@@ -16,7 +16,7 @@
 
 - Luego de tener nuestro repositorio en local, ejecutamos el aplicativo Docker en nuestro equipo, con el fin de que los servicios esten corriendo y podamos gestionarlo desde consola con sus propios comandos.
   
-    - Crearemos una imagen en docker, asi que desde la terminal ejecutamos el comando "docker build -t busquedasemantica .", (la palabra busquedasemantica será el nombre de nuestra imagen asi que se puede 
+    - Crearemos una imagen en docker, asi que desde la terminal ejecutamos el comando ***"docker build -t busquedasemantica ."***, (la palabra busquedasemantica será el nombre de nuestra imagen asi que se puede 
       modificar) para la creación de esta imagen es relevante tener configurado correctamente el archivo "dockerfile" ya que este es el que contiene todas las instrucciones para el correcto montaje de nuestra 
       imagen y posterio ejecución de los contenedores, aqui se incluirán instrucciones que instalarán librerias y contenido adicional que necesitamos para la correcta ejecución de nuestro proyecto; también 
       esta el archivo "requerimientos.txt" en el cual se encuentran los nombres de las librerias que necesitaremos, este archivo se utiliza para administrar ordenadamente las librearias necesarias.
@@ -35,10 +35,11 @@
       
         ***observación:*** este proyecto utilizará las librerias de sentence-transformers la cual son pesadas, nuestra imagen quedara de 10gb aproximadamente.
       
-    - Con la imagen creada podremos continuar con la ejecución de nuestro proyecto, para esto ejecutaremos el comando "docker run -it busquedasemantica" en nuestra terminal, con esto se creará y ejecutará el 
-     contenedor en modo interactivo, el cual automáticamente ejecutará nuestro aplicativo es decir ejecutará el archivo .py que configuramos para el arranque en el dockerfile; para validar la puesta en marcha 
-     del contenedor dentro del aplciativo docker desktop, vamos a la pestaña "containers" y ahi visualizaremos el nuevo contenedor, los nombres de estos son aleatorios, a comparación del nombre de la imagen 
-     que si lo parametrizamos.
+    - Con la imagen creada podremos continuar con la ejecución de nuestro proyecto, para esto ejecutaremos el comando ***"docker run -it busquedasemantica"*** en nuestra terminal, con esto se creará y 
+    ejecutará el contenedor en modo interactivo, el cual automáticamente ejecutará nuestro aplicativo es decir ejecutará el archivo .py que configuramos para el arranque en el dockerfile; para validar la 
+    puesta en marcha del contenedor dentro del aplciativo docker desktop, vamos a la pestaña "containers" y ahi visualizaremos el nuevo contenedor, los nombres de estos son aleatorios, a comparación del 
+    nombre de la imagen que si lo parametrizamos.
+
      ![image](https://github.com/user-attachments/assets/a998316a-bb5d-4448-8471-9818cd08138c)
 
      ![image](https://github.com/user-attachments/assets/1b04d739-d643-4066-99d4-54288761c489)
@@ -54,9 +55,9 @@
 
    - Con el fin de garantizar un desarrollo idóneo del proyecto, se desarrollaron pruebas unitarias para validar la calidad del proyecto, las pruebas las podremos ejecutar y validar de la siguiente manera:
      
-        - Abrimos una nueva terminal desde nuestro entorno de desarrollo o prompt elegido, y ejecutamos la siguiente instrucción "docker exec -it mi_contenedor coverage run -m unittest 
-          tests/test_search_engine.py", (aqui estamos utilizando coverage que es una librería que nos permite medir la cobertura de las pruebas diseñas) la palabra "mi_contenedor" debe ser reemplazada por el 
-          id del contenedor, este id lo obtenemos digitando el comando "docker ps"; tambien es importante el archivo que contiene las pruebas, el cual esta dentro de la carpeta "tests".
+        - Abrimos una nueva terminal desde nuestro entorno de desarrollo o prompt elegido, y ejecutamos la siguiente instrucción ***"docker exec -it mi_contenedor coverage run -m unittest 
+          tests/test_search_engine.py"***, (aqui estamos utilizando coverage que es una librería que nos permite medir la cobertura de las pruebas diseñas) la palabra "mi_contenedor" debe ser reemplazada por 
+          el id del contenedor, este id lo obtenemos digitando el comando "docker ps"; tambien es importante el archivo que contiene las pruebas, el cual esta dentro de la carpeta "tests".
   
           ![image](https://github.com/user-attachments/assets/2b1ad691-c2c6-4761-ba53-7a5c9b2e33a2)
 
@@ -64,12 +65,12 @@
           de pruebas realizadas, para este ejercicio fueron 8.
           ![image](https://github.com/user-attachments/assets/8cfcc494-6d91-473e-be10-12bd21757937)
 
-        - Ahora utilizaremos el comando "docker exec -it mi_contenedor coverage report" (tener presente cambiar id contenedor), con el objetivo de visualizar el procentaje de cobertura que tiene las pruebas
-          diseñadas, para este ejercicio se obtiene un 74% de cobertura sobre el archivo "semantic_search_students.py".
+        - Ahora utilizaremos el comando ***"docker exec -it mi_contenedor coverage report"*** (tener presente cambiar id contenedor), con el objetivo de visualizar el procentaje de cobertura que tiene las 
+          pruebas diseñadas, para este ejercicio se obtiene un 74% de cobertura sobre el archivo "semantic_search_students.py".
 
           ![image](https://github.com/user-attachments/assets/4f204491-e8f1-44d1-9904-a11cb824d5cd)
 
-        - Por último gracias a las librerias de coverage podremos visualizar en detalle los resultados de las pruebas de cobertura, asi que ejecutamos el comando "docker exec -it mi_contenedor  coverage html"
+        - Por último gracias a las librerias de coverage podremos visualizar en detalle los resultados de las pruebas de cobertura, asi que ejecutamos el comando ***"docker exec -it mi_contenedor coverage             html"***
           (tener presente cambiar id contenedor)
           
           ![image](https://github.com/user-attachments/assets/ba054312-fa92-46f3-9a78-3e74d9d9d0af)
@@ -88,5 +89,11 @@
 
        ![image](https://github.com/user-attachments/assets/3d8f2271-3c65-4b0e-a200-176d809936ee)
 
+### EJECUCIÓN SECUENCIAL DE COMANDOS DOCKER EN TERMINAL:
+- docker build -t busquedasemantica .
+- docker run -it busquedasemantica
+- docker exec -it mi_contenedor coverage run -m unittest tests/test_search_engine.py
+- docker exec -it mi_contenedor coverage report
+- docker exec -it mi_contenedor  coverage html
 
 
