@@ -46,7 +46,7 @@
       ***Nota importante: Dejaremos ejecutando el proyecto para poder continuar con la ejecución de pruebas, si finalizamos nuestra busqueda con la palabra "salir" el contenedor se detendra y no
       podremos seguuir utilizando la linea de comandos dentro del contenedor***
 
-      ###Pruebas y cobertura aplicativo
+  ###Pruebas y cobertura aplicativo
 
    - Con el fin de garantizar un desarrollo idóneo del proyecto, se desarrollaron pruebas unitarias para validar la calidad del proyecto, las pruebas las podremos ejecutar y validar de la siguiente manera:
      
